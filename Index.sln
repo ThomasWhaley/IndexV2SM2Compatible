@@ -37,6 +37,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibSaber", "LibSaber\src\Li
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibSaber.SpaceMarine2", "LibSaber\src\LibSaber.SpaceMarine2\LibSaber.SpaceMarine2.csproj", "{D4CC605F-6F5A-415E-B636-81756025E011}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibSaber.Halo2A", "LibSaber\src\LibSaber.Halo2A\LibSaber.Halo2A.csproj", "{05B93A95-4CF8-476D-9493-9671DBC2122C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibSaber.HaloCEA", "LibSaber\src\LibSaber.HaloCEA\LibSaber.HaloCEA.csproj", "{0370B44B-E050-4DF6-BB7E-735D7C1E96E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +169,22 @@ Global
 		{D4CC605F-6F5A-415E-B636-81756025E011}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D4CC605F-6F5A-415E-B636-81756025E011}.Release|x64.ActiveCfg = Release|Any CPU
 		{D4CC605F-6F5A-415E-B636-81756025E011}.Release|x64.Build.0 = Release|Any CPU
+		{05B93A95-4CF8-476D-9493-9671DBC2122C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B93A95-4CF8-476D-9493-9671DBC2122C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B93A95-4CF8-476D-9493-9671DBC2122C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{05B93A95-4CF8-476D-9493-9671DBC2122C}.Debug|x64.Build.0 = Debug|Any CPU
+		{05B93A95-4CF8-476D-9493-9671DBC2122C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B93A95-4CF8-476D-9493-9671DBC2122C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B93A95-4CF8-476D-9493-9671DBC2122C}.Release|x64.ActiveCfg = Release|Any CPU
+		{05B93A95-4CF8-476D-9493-9671DBC2122C}.Release|x64.Build.0 = Release|Any CPU
+		{0370B44B-E050-4DF6-BB7E-735D7C1E96E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0370B44B-E050-4DF6-BB7E-735D7C1E96E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0370B44B-E050-4DF6-BB7E-735D7C1E96E1}.Debug|x64.ActiveCfg = Debug|x64
+		{0370B44B-E050-4DF6-BB7E-735D7C1E96E1}.Debug|x64.Build.0 = Debug|x64
+		{0370B44B-E050-4DF6-BB7E-735D7C1E96E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0370B44B-E050-4DF6-BB7E-735D7C1E96E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0370B44B-E050-4DF6-BB7E-735D7C1E96E1}.Release|x64.ActiveCfg = Release|x64
+		{0370B44B-E050-4DF6-BB7E-735D7C1E96E1}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
