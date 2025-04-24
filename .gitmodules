@@ -1,0 +1,3 @@
+[submodule "LibSaber"]
+	path = LibSaber
+	url = https://github.com/Wildenhaus/LibSaber.git

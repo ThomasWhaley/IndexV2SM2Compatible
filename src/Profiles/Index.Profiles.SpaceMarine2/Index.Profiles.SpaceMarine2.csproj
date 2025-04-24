@@ -15,8 +15,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\..\LibSaber\src\LibSaber.SpaceMarine2\LibSaber.SpaceMarine2.csproj" />
-		<ProjectReference Include="..\..\..\..\LibSaber\src\LibSaber\LibSaber.csproj" />
+		<ProjectReference Include="..\..\..\LibSaber\src\LibSaber.SpaceMarine2\LibSaber.SpaceMarine2.csproj" />
+		<ProjectReference Include="..\..\..\LibSaber\src\LibSaber\LibSaber.csproj" />
 		<ProjectReference Include="..\..\Index.Core\Index.Core.csproj" />
 		<ProjectReference Include="..\..\Index.Domain\Index.Domain.csproj" />
 	</ItemGroup>
@@ -44,13 +44,7 @@
 			<InternalizeExcludeAssemblies Include="^LibSaber" />
 		</ItemGroup>
 
-		<ILRepack
-			OutputType="$(OutputType)"
-			MainAssembly="$(AssemblyName).dll"
-			OutputAssembly="$(AssemblyName).dll"
-			InputAssemblies="@(InputAssemblies)"
-			InternalizeExcludeAssemblies="@(InternalizeExcludeAssemblies)"
-			WorkingDirectory="$(WorkingDirectory)" />
+		<ILRepack OutputType="$(OutputType)" MainAssembly="$(AssemblyName).dll" OutputAssembly="$(AssemblyName).dll" InputAssemblies="@(InputAssemblies)" InternalizeExcludeAssemblies="@(InternalizeExcludeAssemblies)" WorkingDirectory="$(WorkingDirectory)" />
 
 	</Target>
 
