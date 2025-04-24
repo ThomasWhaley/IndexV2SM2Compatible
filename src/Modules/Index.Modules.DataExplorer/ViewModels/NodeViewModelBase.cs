@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
@@ -35,7 +32,7 @@ namespace Index.Modules.DataExplorer.ViewModels
 
     public TViewModel Parent
     {
-      get => (TViewModel)_parent;
+      get => ( TViewModel ) _parent;
     }
 
     public IxObservableCollection<TViewModel> Children
@@ -107,7 +104,7 @@ namespace Index.Modules.DataExplorer.ViewModels
 
     #region Public Methods
 
-    public void AddChild(TViewModel child)
+    public void AddChild( TViewModel child )
     {
       child._parent = this;
       _children.Add( child );

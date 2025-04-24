@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Index.Jobs;
-using Index.Textures;
+﻿using Index.Textures;
 using Prism.Ioc;
 
 namespace Index.Domain.Assets.Textures.Dxgi

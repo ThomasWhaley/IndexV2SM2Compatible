@@ -21,7 +21,7 @@ namespace Index.Profiles.SpaceMarine2.FileSystem.Files
     {
       get
       {
-        if (_resourceDescription is null)
+        if ( _resourceDescription is null )
           _resourceDescription = LoadResourceDesc();
 
         return _resourceDescription;
@@ -71,7 +71,7 @@ namespace Index.Profiles.SpaceMarine2.FileSystem.Files
 
     #region Constructor
 
-    public SM2ResourceFileNode( IFileSystemDevice device, fioZIP_CACHE_FILE.ENTRY entry, IFileSystemNode parent = null ) 
+    public SM2ResourceFileNode( IFileSystemDevice device, fioZIP_CACHE_FILE.ENTRY entry, IFileSystemNode parent = null )
       : base( device, entry, parent )
     {
     }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using Index.UI.Extensions;
 
 namespace Index.UI.Controls

@@ -7,7 +7,6 @@ using Index.Profiles.HaloCEA.Assets;
 using Index.Profiles.HaloCEA.FileSystem.Files;
 using Index.Textures;
 using Prism.Ioc;
-using Serilog;
 
 namespace Index.Profiles.HaloCEA.Jobs
 {

@@ -1,15 +1,14 @@
-﻿using Index.Domain.Assets;
+﻿using System.Collections.Generic;
+using System.Windows.Input;
+using Index.Domain;
+using Index.Domain.Assets;
 using Index.Domain.Editors;
 using Index.Domain.Models;
-using Index.Domain;
 using Index.Modules.DataExplorer.Services;
-using Index.Modules.DataExplorer.ViewModels;
-using Index.UI.Common;
-using Prism.Regions;
-using System.Collections.Generic;
-using System.Windows.Input;
 using Index.UI.Commands;
+using Index.UI.Common;
 using Prism.Commands;
+using Prism.Regions;
 
 namespace Index.Modules.DataExplorer.ViewModels;
 

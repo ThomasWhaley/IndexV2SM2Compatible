@@ -2,22 +2,17 @@
 The MIT License (MIT)
 Copyright (c) 2018 Helix Toolkit contributors
 */
-using Assimp;
-using SharpDX;
-using SharpDX.Direct3D11;
 using System;
 using System.Linq;
+using Assimp;
 using Microsoft.Extensions.Logging;
+using SharpDX;
+using SharpDX.Direct3D11;
 
 namespace HelixToolkit.SharpDX.Core
 {
-  using HelixToolkit.SharpDX.Core.Assimp;
-  using HelixToolkit.SharpDX.Core.Model;
-  using HelixToolkit.SharpDX.Core;
-  using Model;
-  using Serilog.Core;
-  using System.Configuration;
   using System.Threading;
+  using HelixToolkit.SharpDX.Core.Model;
   using HxAnimations = Animations;
   using HxScene = Model.Scene;
   namespace Assimp

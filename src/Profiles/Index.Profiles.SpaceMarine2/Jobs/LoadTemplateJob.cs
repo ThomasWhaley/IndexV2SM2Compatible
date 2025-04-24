@@ -10,14 +10,14 @@ namespace Index.Profiles.SpaceMarine2.Jobs
   public class LoadTemplateJob : CompositeJobBase<SM2TemplateAsset>
   {
 
-    public LoadTemplateJob( IContainerProvider container, IParameterCollection parameters ) 
+    public LoadTemplateJob( IContainerProvider container, IParameterCollection parameters )
       : base( container, parameters )
     {
       var assetReference = Parameters.Get<IAssetReference>();
       Name = $"Loading Template {assetReference.AssetName}";
       SetStatus( Name );
 
-      if(!Parameters.TryGet<IAssetLoadContext>( out _ ))
+      if ( !Parameters.TryGet<IAssetLoadContext>( out _ ) )
         Parameters.Set<IAssetLoadContext>( new AssetLoadContext() );
 
       Parameters.Set( "LodMeshSet", new HashSet<string>() );

@@ -7,9 +7,8 @@ using System.Linq;
 
 namespace HelixToolkit.SharpDX.Core
 {
-  using Model.Scene;
   using Animations;
-  using HelixToolkit.SharpDX.Core.Model.Scene;
+  using Model.Scene;
 
   namespace Assimp
   {

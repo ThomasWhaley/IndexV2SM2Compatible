@@ -1,7 +1,4 @@
-﻿using Index.Domain.Assets;
-using Index.Domain.Jobs;
-using Index.Jobs;
-using Prism.Ioc;
+﻿using Prism.Ioc;
 
 namespace Index.Profiles.HaloCEA.Assets
 {

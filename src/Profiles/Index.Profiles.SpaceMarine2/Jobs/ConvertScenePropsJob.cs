@@ -1,15 +1,13 @@
 ﻿using Assimp;
+using Index.Domain.Assets;
 using Index.Domain.Assets.Meshes;
 using Index.Domain.Assets.Textures;
-using Index.Domain.Assets;
-using Index.Jobs;
-using Prism.Ioc;
-using LibSaber.SpaceMarine2.Structures;
-using Index.Profiles.SpaceMarine2.Meshes;
-using LibSaber.IO;
-using LibSaber.SpaceMarine2.Serialization;
-using Index.Profiles.SpaceMarine2.Common;
 using Index.Domain.FileSystem;
+using Index.Jobs;
+using Index.Profiles.SpaceMarine2.Common;
+using Index.Profiles.SpaceMarine2.Meshes;
+using LibSaber.SpaceMarine2.Structures;
+using Prism.Ioc;
 using Serilog;
 
 namespace Index.Profiles.SpaceMarine2.Jobs

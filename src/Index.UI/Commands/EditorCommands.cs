@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Documents;
 using System.Windows.Input;
 using Index.Domain;
 using Index.Domain.Assets;

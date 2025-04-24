@@ -1,10 +1,8 @@
 ﻿using Index.Domain.Assets;
-using Index.Domain.Assets.Textures;
 using Index.Domain.Assets.Textures.Dxgi;
 using Index.Domain.Editors;
 using Index.Modules.TextureEditor.Views;
 using Index.UI.ViewModels;
-using Index.UI.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 
@@ -17,7 +15,7 @@ namespace Index.Modules.TextureEditor
     public void OnInitialized( IContainerProvider containerProvider )
     {
       var assetManager = containerProvider.Resolve<IAssetManager>();
-      assetManager.RegisterViewTypeForExportOptionsType(typeof(DxgiTextureExportOptions), typeof(DxgiTextureAssetExportOptionsView));
+      assetManager.RegisterViewTypeForExportOptionsType( typeof( DxgiTextureExportOptions ), typeof( DxgiTextureAssetExportOptionsView ) );
     }
 
     public void RegisterTypes( IContainerRegistry containerRegistry )

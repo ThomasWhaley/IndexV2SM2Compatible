@@ -7,7 +7,6 @@ using LibSaber.SpaceMarine2.Enumerations;
 using LibSaber.SpaceMarine2.Serialization.Geometry;
 using LibSaber.SpaceMarine2.Structures;
 using LibSaber.SpaceMarine2.Structures.Geometry;
-using Microsoft.EntityFrameworkCore;
 
 namespace Index.Profiles.SpaceMarine2.Meshes
 {
@@ -77,9 +76,9 @@ namespace Index.Profiles.SpaceMarine2.Meshes
           case GeometryElementType.Interleaved:
             AddInterleavedData( buffer, meshBuffer );
             break;
-          //case GeometryElementType.BoneId:
-          //  AddSkinCompoundBoneIds( buffer, meshBuffer );
-          //  break;
+            //case GeometryElementType.BoneId:
+            //  AddSkinCompoundBoneIds( buffer, meshBuffer );
+            //  break;
         }
       }
 
@@ -160,11 +159,11 @@ namespace Index.Profiles.SpaceMarine2.Meshes
       var boneIds = Submesh.BoneIds;
       var set = new HashSet<short>();
 
-      if ( vertex.HasWeight1)
+      if ( vertex.HasWeight1 )
         AddVertexWeight( vertex.Index1, vertex.Weight1 );
-      if ( vertex.HasWeight2)
+      if ( vertex.HasWeight2 )
         AddVertexWeight( vertex.Index2, vertex.Weight2 );
-      if ( vertex.HasWeight3)
+      if ( vertex.HasWeight3 )
         AddVertexWeight( vertex.Index3, vertex.Weight3 );
       //if ( vertex.Weight4.HasValue)
       //  AddVertexWeight( vertex.Index4, vertex.Weight4.Value );

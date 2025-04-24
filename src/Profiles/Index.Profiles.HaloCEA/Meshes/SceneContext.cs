@@ -1,5 +1,4 @@
 ﻿using Assimp;
-using Index.Profiles.HaloCEA.Common;
 using LibSaber.HaloCEA.Structures;
 
 namespace Index.Profiles.HaloCEA.Meshes

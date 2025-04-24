@@ -1,6 +1,6 @@
-﻿using Assimp;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Assimp;
 
 namespace HelixToolkit.SharpDX.Core
 {

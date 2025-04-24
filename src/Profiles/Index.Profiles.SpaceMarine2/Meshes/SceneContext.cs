@@ -1,7 +1,6 @@
 ﻿using Assimp;
-using HelixToolkit.SharpDX.Core;
-using LibSaber.SpaceMarine2.Structures;
 using LibSaber.IO;
+using LibSaber.SpaceMarine2.Structures;
 
 namespace Index.Profiles.SpaceMarine2.Meshes
 {
@@ -34,7 +33,7 @@ namespace Index.Profiles.SpaceMarine2.Meshes
     {
       Name = name;
       Scene = new Scene();
-      Scene.RootNode = new Node(name);
+      Scene.RootNode = new Node( name );
 
       Stream = stream;
       Reader = new NativeReader( stream, Endianness.LittleEndian );

@@ -1,5 +1,4 @@
 ﻿using Index.Domain.Assets;
-using Index.Domain.FileSystem;
 using Index.Profiles.SpaceMarine2.FileSystem.Files;
 using LibSaber.SpaceMarine2.Structures.Resources;
 
@@ -11,7 +10,7 @@ namespace Index.Profiles.SpaceMarine2.Assets
 
     public override string TypeName => "Material";
 
-    public SM2TextureDefinitionAsset( IAssetReference assetReference ) 
+    public SM2TextureDefinitionAsset( IAssetReference assetReference )
       : base( assetReference )
     {
     }

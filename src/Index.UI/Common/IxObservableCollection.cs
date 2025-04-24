@@ -23,7 +23,7 @@ namespace Index.UI.Common
       set
       {
         _suppressNotifications = value;
-        if( _suppressNotifications == false && _notificationSuppressed )
+        if ( _suppressNotifications == false && _notificationSuppressed )
         {
           this.OnCollectionChanged( new NotifyCollectionChangedEventArgs( NotifyCollectionChangedAction.Reset ) );
           _notificationSuppressed = false;
@@ -39,12 +39,12 @@ namespace Index.UI.Common
     {
     }
 
-    public IxObservableCollection( IEnumerable<T> collection ) 
+    public IxObservableCollection( IEnumerable<T> collection )
       : base( collection )
     {
     }
 
-    public IxObservableCollection( List<T> list ) 
+    public IxObservableCollection( List<T> list )
       : base( list )
     {
     }
@@ -55,7 +55,7 @@ namespace Index.UI.Common
 
     protected override void OnCollectionChanged( NotifyCollectionChangedEventArgs e )
     {
-      if(SuppressNotifications)
+      if ( SuppressNotifications )
       {
         _notificationSuppressed = true;
         return;

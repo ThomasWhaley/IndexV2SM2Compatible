@@ -3,8 +3,6 @@ using Index.Domain.Assets.Textures;
 using Index.Domain.Jobs;
 using Index.Jobs;
 using Index.Profiles.SpaceMarine2.Meshes;
-using LibSaber.SpaceMarine2.Serialization.Scripting;
-using LibSaber.SpaceMarine2.Structures.Textures;
 using Prism.Ioc;
 
 namespace Index.Profiles.SpaceMarine2.Jobs
@@ -74,7 +72,7 @@ namespace Index.Profiles.SpaceMarine2.Jobs
         if ( string.IsNullOrEmpty( diffuseName ) )
           continue;
 
-        var matches = textureAssetReferences.Where( x => Path.GetFileName(x.AssetName).Contains( diffuseName ) );
+        var matches = textureAssetReferences.Where( x => Path.GetFileName( x.AssetName ).Contains( diffuseName ) );
         foreach ( var match in matches )
           toLoadSet.Add( match );
       }
@@ -103,8 +101,8 @@ namespace Index.Profiles.SpaceMarine2.Jobs
           lock ( Textures )
           {
             var texture = loadJob.Result;
-            var texName = Path.GetFileNameWithoutExtension( texture.AssetName.Replace(".resource", "") );
-            Textures.Add(texName, texture );
+            var texName = Path.GetFileNameWithoutExtension( texture.AssetName.Replace( ".resource", "" ) );
+            Textures.Add( texName, texture );
             IncreaseCompletedUnits( 1 );
           }
         } );

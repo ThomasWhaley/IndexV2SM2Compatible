@@ -8,10 +8,8 @@ using SharpDX.Direct3D11;
 
 namespace HelixToolkit.SharpDX.Core
 {
-  using HelixToolkit.SharpDX.Core.Assimp;
-  using HelixToolkit.SharpDX.Core.Model;
-  using Model;
   using System.Threading;
+  using HelixToolkit.SharpDX.Core.Model;
   using HxScene = Model.Scene;
   namespace Assimp
   {

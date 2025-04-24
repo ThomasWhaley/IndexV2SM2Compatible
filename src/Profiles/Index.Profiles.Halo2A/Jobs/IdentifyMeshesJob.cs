@@ -1,6 +1,5 @@
 ﻿using Assimp;
 using Index.Jobs;
-using Index.Profiles.Halo2A.Common;
 using Index.Profiles.Halo2A.Meshes;
 using Prism.Ioc;
 

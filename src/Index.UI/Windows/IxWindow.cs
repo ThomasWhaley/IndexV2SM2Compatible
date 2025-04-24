@@ -1,8 +1,5 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Runtime.InteropServices;
 using System.Windows;
-using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Shapes;
 using Index.UI.Common;

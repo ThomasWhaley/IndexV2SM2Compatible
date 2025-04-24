@@ -2,18 +2,15 @@
 The MIT License (MIT)
 Copyright (c) 2018 Helix Toolkit contributors
 */
+using System;
 using Assimp;
 using Assimp.Configs;
 using SharpDX;
 using SharpDX.Direct3D11;
-using System;
 
 namespace HelixToolkit.SharpDX.Core
 {
-  using HelixToolkit.Logger;
   using HelixToolkit.SharpDX.Core.Model;
-  using HelixToolkit.SharpDX.Core;
-  using Model;
 
   namespace Assimp
   {

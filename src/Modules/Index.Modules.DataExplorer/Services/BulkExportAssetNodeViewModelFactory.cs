@@ -10,11 +10,11 @@ namespace Index.Modules.DataExplorer.Services
 
     #region Public Methods
 
-    public IxObservableCollection<BulkExportAssetNodeViewModel> CreateExportNodes(ICollection<AssetNodeViewModel> assetNodes)
+    public IxObservableCollection<BulkExportAssetNodeViewModel> CreateExportNodes( ICollection<AssetNodeViewModel> assetNodes )
     {
       var exportNodes = new IxObservableCollection<BulkExportAssetNodeViewModel>();
 
-      foreach(var assetNode in assetNodes)
+      foreach ( var assetNode in assetNodes )
       {
         var exportNode = CreateExportNode( assetNode );
         exportNodes.Add( exportNode );
@@ -49,15 +49,15 @@ namespace Index.Modules.DataExplorer.Services
 
     #region Private Methods
 
-    private BulkExportAssetNodeViewModel CreateExportNode( AssetNodeViewModel assetNode)
+    private BulkExportAssetNodeViewModel CreateExportNode( AssetNodeViewModel assetNode )
     {
       var exportNode = new BulkExportAssetNodeViewModel( assetNode );
 
       exportNode.Children.SuppressNotifications = true;
-      foreach(var childAssetNode in assetNode.Children )
+      foreach ( var childAssetNode in assetNode.Children )
       {
         var childExportNode = CreateExportNode( childAssetNode );
-        exportNode.AddChild(childExportNode);
+        exportNode.AddChild( childExportNode );
       }
       exportNode.Children.SuppressNotifications = false;
 

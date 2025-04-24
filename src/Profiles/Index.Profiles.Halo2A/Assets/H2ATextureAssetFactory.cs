@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Index.Domain.Assets;
+﻿using Index.Domain.Assets;
 using Index.Domain.Assets.Textures.Dxgi;
 using Index.Jobs;
 using Index.Profiles.Halo2A.Jobs;
-using Index.Textures;
 using Prism.Ioc;
 
 namespace Index.Profiles.Halo2A.Assets

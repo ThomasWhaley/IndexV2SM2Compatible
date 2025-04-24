@@ -1,6 +1,5 @@
 ﻿using Assimp;
 using Index.Domain.Assets.Textures;
-using Index.Domain.FileSystem;
 using Index.Jobs;
 using Index.Profiles.SpaceMarine2.Common;
 using Index.Profiles.SpaceMarine2.Meshes;
@@ -106,7 +105,7 @@ namespace Index.Profiles.SpaceMarine2.Jobs
       if ( rootObject.ReadName is null )
         rootObject.ReadName = Context.Name;
 
-      AddNodesRecursive(rootObject, rootNode);
+      AddNodesRecursive( rootObject, rootNode );
 
       //foreach ( var obj in objects )
       //{
@@ -140,7 +139,7 @@ namespace Index.Profiles.SpaceMarine2.Jobs
       //}
     }
 
-    private void AddNodesRecursive(objOBJ obj, Node parentNode)
+    private void AddNodesRecursive( objOBJ obj, Node parentNode )
     {
       if ( obj.SubMeshes.Any() )
         return;
@@ -339,7 +338,7 @@ namespace Index.Profiles.SpaceMarine2.Jobs
       }
 
       //foreach ( var node in Context.Scene.RootNode.Children )
-        SetScale( armatureNode );
+      SetScale( armatureNode );
     }
 
     #endregion

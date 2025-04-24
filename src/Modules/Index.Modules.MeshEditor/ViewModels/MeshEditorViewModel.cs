@@ -6,7 +6,6 @@ using HelixToolkit.Wpf.SharpDX;
 using Index.Common;
 using Index.Domain.Assets.Meshes;
 using Index.UI.ViewModels;
-using Microsoft.VisualBasic.Logging;
 using Prism.Commands;
 using Prism.Ioc;
 using SharpDX;
@@ -123,7 +122,7 @@ namespace Index.Modules.MeshEditor.ViewModels
         }
       }
 
-      if(!boundsCalculated)
+      if ( !boundsCalculated )
       {
         Serilog.Log.Error( "Failed to calculate bounds after 10 retries." +
           "If the viewport is empty, try reloading the asset." );

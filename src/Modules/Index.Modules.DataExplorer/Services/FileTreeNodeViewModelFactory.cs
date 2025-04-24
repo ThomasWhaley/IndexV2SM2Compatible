@@ -44,7 +44,7 @@ namespace Index.Modules.DataExplorer.Services
     {
       var viewModel = new FileTreeNodeViewModel( fileSystemNode );
 
-      foreach ( var child in fileSystemNode.EnumerateChildren( recursive: false ).Where(x => !x.IsHidden) )
+      foreach ( var child in fileSystemNode.EnumerateChildren( recursive: false ).Where( x => !x.IsHidden ) )
         viewModel.Children.Add( CreateNode( child ) );
 
       return viewModel;

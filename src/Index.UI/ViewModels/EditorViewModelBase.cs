@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using Index.Domain.Assets;
-using Index.Domain.Jobs;
 using Index.Jobs;
 using Index.UI.Commands;
 using Index.UI.Controls.Menus;

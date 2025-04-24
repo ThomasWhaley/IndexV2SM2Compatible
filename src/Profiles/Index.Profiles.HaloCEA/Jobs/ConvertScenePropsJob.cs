@@ -61,9 +61,9 @@ namespace Index.Profiles.HaloCEA.Jobs
         var loadedProps = await LoadProps( propsToLoad );
         AddProps( loadedProps );
       }
-      catch(Exception ex)
+      catch ( Exception ex )
       {
-        Log.Logger.Error(ex, "Failed to add props." );
+        Log.Logger.Error( ex, "Failed to add props." );
       }
     }
 

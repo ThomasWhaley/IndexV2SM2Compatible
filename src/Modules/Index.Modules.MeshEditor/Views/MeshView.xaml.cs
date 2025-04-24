@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Linq;
 using System.Threading;
 using System.Windows;
@@ -11,12 +10,9 @@ using HelixToolkit.SharpDX.Core;
 using HelixToolkit.Wpf.SharpDX;
 using Index.UI.Common;
 using Index.Utilities;
-using Prism.Commands;
 using SharpDX;
 using Camera = HelixToolkit.Wpf.SharpDX.Camera;
 using Point = System.Windows.Point;
-using Quaternion = System.Windows.Media.Media3D.Quaternion;
-using Vector3 = SharpDX.Vector3;
 
 namespace Index.Modules.MeshEditor.Views
 {

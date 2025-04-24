@@ -47,7 +47,7 @@ namespace Index.Profiles.SpaceMarine2.Jobs
       var lgDataFile = GetLgDataFile( assetReference );
 
       using var stream = lgFile.Open();
-      var reader = new NativeReader(stream, Endianness.LittleEndian);
+      var reader = new NativeReader( stream, Endianness.LittleEndian );
 
       var name = Path.GetFileNameWithoutExtension( assetReference.AssetName );
       var scene = Serializer<scnSCENE>.Deserialize( reader );

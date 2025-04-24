@@ -72,7 +72,7 @@ namespace Index.Profiles.SpaceMarine2.Jobs
       ASSERT( assetNode is not null, "Template AssetNode is null." );
 
       var tplFile = assetNode.ResourceDescription.tpl;
-      var tplFileNode = FileSystem.EnumerateFiles().SingleOrDefault(x => Path.GetFileName(x.Name) == tplFile );
+      var tplFileNode = FileSystem.EnumerateFiles().SingleOrDefault( x => Path.GetFileName( x.Name ) == tplFile );
 
       return tplFileNode;
     }

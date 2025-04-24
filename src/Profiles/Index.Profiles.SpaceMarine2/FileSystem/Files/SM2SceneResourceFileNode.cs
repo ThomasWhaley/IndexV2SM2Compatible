@@ -11,10 +11,10 @@ namespace Index.Profiles.SpaceMarine2.FileSystem.Files
     IFileSystemAssetNode<SM2SceneAsset, SM2SceneAssetFactory>
   {
 
-    public SM2SceneResourceFileNode( 
-      IFileSystemDevice device, 
-      fioZIP_CACHE_FILE.ENTRY entry, 
-      IFileSystemNode parent = null ) 
+    public SM2SceneResourceFileNode(
+      IFileSystemDevice device,
+      fioZIP_CACHE_FILE.ENTRY entry,
+      IFileSystemNode parent = null )
       : base( device, entry, parent )
     {
     }

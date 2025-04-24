@@ -1,5 +1,4 @@
 ﻿using Index.Domain.Assets;
-using Index.Domain.Assets.Text;
 
 namespace Index.Profiles.HaloCEA.Assets
 {

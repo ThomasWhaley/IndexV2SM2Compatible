@@ -6,16 +6,16 @@ using LibSaber.SpaceMarine2.Structures.Resources;
 namespace Index.Profiles.SpaceMarine2.FileSystem.Files
 {
 
-  public class SM2TemplateResourceFileNode : 
-    SM2ResourceFileNode<resDESC_TPL>, 
+  public class SM2TemplateResourceFileNode :
+    SM2ResourceFileNode<resDESC_TPL>,
     IFileSystemAssetNode<SM2TemplateAsset, SM2TemplateAssetFactory>
   {
 
     #region Constructor
 
-    public SM2TemplateResourceFileNode( 
-      IFileSystemDevice device, 
-      fioZIP_CACHE_FILE.ENTRY entry, 
+    public SM2TemplateResourceFileNode(
+      IFileSystemDevice device,
+      fioZIP_CACHE_FILE.ENTRY entry,
       IFileSystemNode parent = null )
       : base( device, entry, parent )
     {

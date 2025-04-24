@@ -57,10 +57,10 @@ namespace Index.Domain.Assets
       return true;
     }
 
-    public IJob<TAsset> GetAssetLoadingJob<TAsset>(IAssetReference assetReference )
+    public IJob<TAsset> GetAssetLoadingJob<TAsset>( IAssetReference assetReference )
       where TAsset : IAsset
     {
-      if(!TryGetAssetLoadingJob<TAsset>(assetReference, out var assetLoadJob))
+      if ( !TryGetAssetLoadingJob<TAsset>( assetReference, out var assetLoadJob ) )
         return FAIL_RETURN<IJob<TAsset>>( "Asset is not marked as loaded." );
 
       return assetLoadJob;
@@ -91,24 +91,24 @@ namespace Index.Domain.Assets
       }
     }
 
-    public void MarkAssetAsLoading<TAsset>(IAssetReference assetReference, IJob<TAsset> loadAssetJob)
+    public void MarkAssetAsLoading<TAsset>( IAssetReference assetReference, IJob<TAsset> loadAssetJob )
       where TAsset : IAsset
     {
-      lock(_loadingAssets)
+      lock ( _loadingAssets )
       {
         _loadingAssets.Add( assetReference, loadAssetJob );
       }
     }
 
-    public void MarkAssetAsFinishedLoading<TAsset>(IAssetReference assetReference)
+    public void MarkAssetAsFinishedLoading<TAsset>( IAssetReference assetReference )
       where TAsset : IAsset
     {
-      lock( _loadingAssets)
+      lock ( _loadingAssets )
       {
         if ( !_loadingAssets.TryGetValue( assetReference, out var assetLoadJob ) )
           FAIL( "Asset was not marked as loading." );
 
-        _loadingAssets.Remove(assetReference);
+        _loadingAssets.Remove( assetReference );
       }
     }
 

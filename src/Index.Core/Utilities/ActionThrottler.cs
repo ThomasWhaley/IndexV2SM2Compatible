@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Index.Utilities
+﻿namespace Index.Utilities
 {
 
   // Based on https://gist.github.com/mstepura/7ded78c66927114aa8fa

@@ -11,7 +11,7 @@ namespace Index.Profiles.SpaceMarine2.Assets
   public abstract class SM2TextAsset : TextAsset
   {
 
-    public SM2TextAsset( IAssetReference assetReference ) 
+    public SM2TextAsset( IAssetReference assetReference )
       : base( assetReference )
     {
     }
@@ -26,7 +26,7 @@ namespace Index.Profiles.SpaceMarine2.Assets
 
     private IFileSystem _fileSystem;
 
-    public SM2TextAssetFactory( IContainerProvider container ) 
+    public SM2TextAssetFactory( IContainerProvider container )
       : base( container )
     {
       _fileSystem = container.Resolve<IFileSystem>();
@@ -38,7 +38,7 @@ namespace Index.Profiles.SpaceMarine2.Assets
 
       var assetFilePath = asset.GetAssetFilePath( assetReference );
       var matches = _fileSystem.EnumerateFiles().Where( x => x.Name.EndsWith( assetFilePath ) ).ToArray();
-      var assetFileNode = _fileSystem.EnumerateFiles().SingleOrDefault( x => Path.GetFileName(x.Name) == assetFilePath );
+      var assetFileNode = _fileSystem.EnumerateFiles().SingleOrDefault( x => Path.GetFileName( x.Name ) == assetFilePath );
       ASSERT( assetFileNode is not null, "Text asset's data file was not found." );
 
       asset.TextStream = assetFileNode.Open();

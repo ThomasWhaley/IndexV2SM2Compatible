@@ -5,7 +5,7 @@ using Index.Domain.Editors;
 namespace Index.Domain.Assets.Meshes
 {
 
-  [AssetExportOptionsType(typeof(MeshAssetExportOptions))]
+  [AssetExportOptionsType( typeof( MeshAssetExportOptions ) )]
   public class MeshAsset : AssetBase, IMeshAsset
   {
 

@@ -39,11 +39,11 @@ namespace Index.Domain.Assets
       ASSERT_NOT_NULL( assetReference );
       ASSERT( assetReference.AssetType == typeof( TAsset ), "Improper asset reference type." );
 
-      if(!_assetReferences.TryAdd(assetReference.AssetName, assetReference))
+      if ( !_assetReferences.TryAdd( assetReference.AssetName, assetReference ) )
       {
-        var existingReference = _assetReferences[assetReference.AssetName];
-        if( assetReference.Priority > existingReference.Priority )
-          _assetReferences[assetReference.AssetName] = assetReference;
+        var existingReference = _assetReferences[ assetReference.AssetName ];
+        if ( assetReference.Priority > existingReference.Priority )
+          _assetReferences[ assetReference.AssetName ] = assetReference;
       }
     }
 

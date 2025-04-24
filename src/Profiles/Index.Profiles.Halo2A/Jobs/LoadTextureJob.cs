@@ -9,7 +9,6 @@ using LibSaber.Halo2A.Serialization;
 using LibSaber.Halo2A.Structures;
 using LibSaber.IO;
 using Prism.Ioc;
-using Serilog;
 
 namespace Index.Profiles.Halo2A.Jobs
 {

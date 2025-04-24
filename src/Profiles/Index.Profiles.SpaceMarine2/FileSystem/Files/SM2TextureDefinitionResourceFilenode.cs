@@ -10,10 +10,10 @@ namespace Index.Profiles.SpaceMarine2.FileSystem.Files
     IFileSystemAssetNode<SM2TextureDefinitionAsset, SM2TextAssetFactory<SM2TextureDefinitionAsset>>
   {
 
-    public SM2TextureDefinitionResourceFileNode( 
-      IFileSystemDevice device, 
-      fioZIP_CACHE_FILE.ENTRY entry, 
-      IFileSystemNode parent = null ) 
+    public SM2TextureDefinitionResourceFileNode(
+      IFileSystemDevice device,
+      fioZIP_CACHE_FILE.ENTRY entry,
+      IFileSystemNode parent = null )
       : base( device, entry, parent )
     {
     }

@@ -1,5 +1,4 @@
-﻿using System.Windows.Controls;
-using Index.UI.Views;
+﻿using Index.UI.Views;
 
 namespace Index.Modules.TextureEditor.Views
 {

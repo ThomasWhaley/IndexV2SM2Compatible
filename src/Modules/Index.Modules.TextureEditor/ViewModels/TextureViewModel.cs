@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Data;
-using System.Windows.Media.Imaging;
 using Index.UI.ViewModels;
-using PropertyChanged;
 
 namespace Index.Modules.TextureEditor.ViewModels
 {

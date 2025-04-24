@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Index.Domain.Assets;
+﻿using Index.Domain.Assets;
 using Index.Domain.Assets.Textures;
 using Index.Jobs;
 using Index.Profiles.Halo2A.Assets;

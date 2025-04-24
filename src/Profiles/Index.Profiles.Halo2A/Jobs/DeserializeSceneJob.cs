@@ -2,7 +2,6 @@
 using Index.Domain.Assets.Textures;
 using Index.Jobs;
 using Index.Profiles.Halo2A.Meshes;
-using LibSaber.Halo2A.IO;
 using LibSaber.Halo2A.Serialization;
 using LibSaber.Halo2A.Structures;
 using LibSaber.IO;

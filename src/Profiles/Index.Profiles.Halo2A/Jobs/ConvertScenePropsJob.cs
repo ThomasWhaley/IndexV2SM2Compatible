@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Assimp;
+﻿using Assimp;
 using Index.Domain.Assets;
 using Index.Domain.Assets.Meshes;
 using Index.Domain.Assets.Textures;
@@ -14,7 +9,6 @@ using LibSaber.Halo2A.Serialization;
 using LibSaber.Halo2A.Structures;
 using LibSaber.IO;
 using Prism.Ioc;
-using Serilog;
 
 namespace Index.Profiles.Halo2A.Jobs
 {
@@ -130,7 +124,7 @@ namespace Index.Profiles.Halo2A.Jobs
         {
           var propTemplateAsset = await AssetManager.LoadAssetAsync<IMeshAsset>( templateAssetReference, AssetLoadContext );
 
-          if(propTemplateAsset is not null)
+          if ( propTemplateAsset is not null )
             loadedProps.Add( templateName, propTemplateAsset );
           IncreaseCompletedUnits( 1 );
         }

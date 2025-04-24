@@ -1,6 +1,4 @@
-﻿using System.Collections.ObjectModel;
-
-namespace Index.Jobs
+﻿namespace Index.Jobs
 {
 
   public interface IJobManager

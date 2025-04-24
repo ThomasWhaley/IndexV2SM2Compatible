@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Windows.Input;
 using ICSharpCode.AvalonEdit.Document;
 using Index.Domain.Assets.Text;
 using Index.UI.ViewModels;

@@ -25,7 +25,7 @@ namespace Index.Domain.FileSystem
     {
       get => FirstChild is not null;
     }
-    public byte Priority { get; set; }  
+    public byte Priority { get; set; }
 
     public IFileSystemNode Parent { get; }
     public IFileSystemNode FirstChild { get; set; }

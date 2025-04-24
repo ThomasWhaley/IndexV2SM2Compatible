@@ -1,6 +1,5 @@
 ﻿using Index.Domain.Assets;
 using Index.Domain.Assets.Meshes;
-using Index.Domain.Assets.Textures.Dxgi;
 using Index.Domain.Editors;
 using Index.Modules.MeshEditor.Views;
 using Index.UI.ViewModels;

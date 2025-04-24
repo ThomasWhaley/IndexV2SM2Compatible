@@ -1,6 +1,4 @@
 ﻿using Assimp;
-using HelixToolkit.SharpDX.Core;
-using LibSaber.Halo2A.IO;
 using LibSaber.Halo2A.Structures;
 using LibSaber.IO;
 

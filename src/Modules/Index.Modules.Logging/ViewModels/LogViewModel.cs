@@ -3,7 +3,6 @@ using System.Windows.Data;
 using Index.Modules.Logging.Logging;
 using Index.UI.ViewModels;
 using Prism.Events;
-using Prism.Mvvm;
 
 namespace Index.Modules.Logging.ViewModels
 {

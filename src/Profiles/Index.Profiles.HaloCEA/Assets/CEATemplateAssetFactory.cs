@@ -1,5 +1,4 @@
 ﻿using Index.Domain.Assets;
-using Index.Domain.Assets.Meshes;
 using Index.Jobs;
 using Index.Profiles.HaloCEA.Jobs;
 using Prism.Ioc;

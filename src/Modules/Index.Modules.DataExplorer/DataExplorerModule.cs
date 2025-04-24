@@ -1,6 +1,5 @@
 ﻿using Index.Domain;
 using Index.Domain.Editors;
-using Index.Modules.DataExplorer.ViewModels;
 using Index.Modules.DataExplorer.Views;
 using Prism.Ioc;
 using Prism.Modularity;

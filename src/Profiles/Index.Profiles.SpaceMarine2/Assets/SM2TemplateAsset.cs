@@ -1,9 +1,7 @@
 ﻿using Index.Domain.Assets;
 using Index.Domain.Assets.Meshes;
-using Index.Domain.FileSystem;
 using Index.Jobs;
 using Index.Profiles.SpaceMarine2.Jobs;
-using LibSaber.SpaceMarine2.Structures.Resources;
 using Prism.Ioc;
 
 namespace Index.Profiles.SpaceMarine2.Assets

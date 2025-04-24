@@ -11,7 +11,6 @@ using LibSaber.SpaceMarine2.Serialization;
 using LibSaber.SpaceMarine2.Structures;
 using LibSaber.SpaceMarine2.Structures.Resources;
 using Prism.Ioc;
-using Serilog;
 
 namespace Index.Profiles.SpaceMarine2.Jobs
 {
@@ -105,7 +104,7 @@ namespace Index.Profiles.SpaceMarine2.Jobs
     {
       var pctFileName = _resource.pct;
 
-      var node = _fileSystem.EnumerateFiles().FirstOrDefault( x => Path.GetFileName(x.Name) == pctFileName );
+      var node = _fileSystem.EnumerateFiles().FirstOrDefault( x => Path.GetFileName( x.Name ) == pctFileName );
       if ( node is null )
         throw new Exception( $"Texture specifies old format, but PCT file not found: {pctFileName}" );
 

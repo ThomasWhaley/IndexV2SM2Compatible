@@ -1,7 +1,5 @@
 ﻿using Assimp;
-using HelixToolkit.SharpDX.Core.Model.Scene;
 using Index.Jobs;
-using Index.Profiles.SpaceMarine2.Common;
 using Index.Profiles.SpaceMarine2.Meshes;
 using Prism.Ioc;
 
@@ -86,7 +84,7 @@ namespace Index.Profiles.SpaceMarine2.Jobs
         }
       }
 
-      foreach(var obj in Context.GeometryGraph.objects)
+      foreach ( var obj in Context.GeometryGraph.objects )
       {
         var meshName = obj.GetMeshName();
         if ( meshName is null )

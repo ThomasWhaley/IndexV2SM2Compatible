@@ -22,7 +22,7 @@ namespace Index.Domain.Assets.Textures
     public IEnumerable<(string, string)> TextureInformation => GetTextureInformation();
 
     public Dictionary<string, Stream> AdditionalData { get; }
-    
+
     #endregion
 
     #region Constructor

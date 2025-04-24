@@ -63,9 +63,9 @@ namespace Index.Modules.DataExplorer.ViewModels
         {
           item.Command( EditorCommands.OpenTabCommand, _assetReference );
         } );
-        //.AddSeparator()
-        //.AddItem( "Properties" )
-        //.AddItem( "Extract" );
+      //.AddSeparator()
+      //.AddItem( "Properties" )
+      //.AddItem( "Extract" );
     }
 
     #endregion

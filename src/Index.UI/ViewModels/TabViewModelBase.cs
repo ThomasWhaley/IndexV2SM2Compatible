@@ -1,6 +1,4 @@
-﻿using System.Windows.Controls;
-using System.Windows.Input;
-using Index.UI.ViewModels;
+﻿using System.Windows.Input;
 
 namespace Index.UI.ViewModels
 {

@@ -79,7 +79,7 @@ namespace Index.Domain.FileSystem
 
       if ( result.IsSuccessful )
       {
-        lock(_loadedDevices)
+        lock ( _loadedDevices )
           _loadedDevices.Add( device );
       }
     }
@@ -184,7 +184,7 @@ namespace Index.Domain.FileSystem
       return $"*.{extension}";
     }
 
-#endregion
+    #endregion
 
   }
 

@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Index.Modules.Logging.Logging;
+﻿using Index.Modules.Logging.Logging;
 using Index.Modules.Logging.Views;
 using Prism.Events;
 using Prism.Ioc;

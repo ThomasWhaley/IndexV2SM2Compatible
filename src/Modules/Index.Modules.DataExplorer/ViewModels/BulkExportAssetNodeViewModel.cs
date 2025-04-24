@@ -88,7 +88,7 @@ namespace Index.Modules.DataExplorer.ViewModels
 
       foreach ( var child in Children )
       {
-        if(child.IsVisible)
+        if ( child.IsVisible )
           child.IsChecked = isChecked;
       }
 

@@ -26,7 +26,7 @@ namespace Index.Modules.DataExplorer.Jobs
     #region Constructor
 
     public BulkExportJob(
-      IContainerProvider containerProvider, 
+      IContainerProvider containerProvider,
       IParameterCollection parameterCollection )
       : base( containerProvider, parameterCollection )
     {
@@ -51,7 +51,7 @@ namespace Index.Modules.DataExplorer.Jobs
         parameters.Set( "AssetReference", asset );
         parameters.Set( "Options", options );
 
-        switch(options)
+        switch ( options )
         {
           case MeshAssetExportOptions meshOptions:
             AddJob<MeshAssetExportJob>( parameters );

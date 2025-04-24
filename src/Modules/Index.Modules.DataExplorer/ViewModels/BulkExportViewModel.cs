@@ -1,10 +1,13 @@
-﻿using Index.Domain;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Input;
+using Index.Domain;
 using Index.Domain.Assets;
 using Index.Domain.Editors;
 using Index.Jobs;
 using Index.Modules.DataExplorer.Jobs;
 using Index.Modules.DataExplorer.Services;
-using Index.Modules.DataExplorer.ViewModels;
 using Index.UI.Commands;
 using Index.UI.Common;
 using Index.UI.ViewModels;
@@ -12,11 +15,6 @@ using Index.UI.Views;
 using Prism.Commands;
 using Prism.Ioc;
 using Prism.Regions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Windows.Input;
 
 namespace Index.Modules.DataExplorer.ViewModels;
 
@@ -169,14 +167,14 @@ public class BulkExportViewModel : SearchableNodeGraphViewModel<BulkExportAssetN
   private bool ValidateOptions()
   {
     var tabRegion = _regionManager.Regions[ RegionKeys.BulkExportOptionsTabsRegion ];
-    foreach (var optionsVm in ExportOptions.Values)
+    foreach ( var optionsVm in ExportOptions.Values )
     {
       var optionsTab = tabRegion.GetView( optionsVm.AssetTypeName ) as AssetExportOptionsViewBase;
       if ( optionsTab is null )
         continue;
 
       optionsVm.Options.Validate();
-      if(!optionsVm.Options.IsValid )
+      if ( !optionsVm.Options.IsValid )
       {
         tabRegion.Activate( optionsTab );
         return false;
@@ -192,7 +190,7 @@ public class BulkExportViewModel : SearchableNodeGraphViewModel<BulkExportAssetN
   {
     var parameters = new ParameterCollection();
     parameters.Set( "assetsToExport", GetAssetsToExport() );
-    parameters.Set( "exportOptions", ExportOptions.Values.ToDictionary(x => x.AssetType, x => x.Options ) );
+    parameters.Set( "exportOptions", ExportOptions.Values.ToDictionary( x => x.AssetType, x => x.Options ) );
 
     var job = new BulkExportJob( _container, parameters );
     ExportJob = job;
@@ -209,14 +207,14 @@ public class BulkExportViewModel : SearchableNodeGraphViewModel<BulkExportAssetN
 
   private IEnumerable<IAssetReference> GetAssetsToExport()
   {
-    IEnumerable<IAssetReference> GetAssetsToExportRecursive(BulkExportAssetNodeViewModel node)
+    IEnumerable<IAssetReference> GetAssetsToExportRecursive( BulkExportAssetNodeViewModel node )
     {
       var assetReference = node.AssetReference;
       if ( assetReference != null && node.IsChecked == true )
         yield return assetReference;
 
-      foreach ( var childNode in node.Children)
-        foreach(var asset in GetAssetsToExportRecursive(childNode))
+      foreach ( var childNode in node.Children )
+        foreach ( var asset in GetAssetsToExportRecursive( childNode ) )
           yield return asset;
     }
 

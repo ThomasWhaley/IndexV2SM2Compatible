@@ -1,6 +1,4 @@
-﻿using System.IO;
-using System.Text;
-using Index.Modules.Logging.Logging;
+﻿using Index.Modules.Logging.Logging;
 using Prism.Events;
 using Serilog.Core;
 using Serilog.Events;

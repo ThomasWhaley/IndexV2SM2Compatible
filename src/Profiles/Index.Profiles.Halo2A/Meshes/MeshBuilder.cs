@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 using Assimp;
 using Index.Profiles.Halo2A.Common;
 using LibSaber.Halo2A.Enumerations;
-using LibSaber.Halo2A.IO;
 using LibSaber.Halo2A.Serialization.Geometry;
 using LibSaber.Halo2A.Structures;
 using LibSaber.Halo2A.Structures.Geometry;
 using LibSaber.IO;
-using Microsoft.EntityFrameworkCore;
 
 namespace Index.Profiles.Halo2A.Meshes
 {

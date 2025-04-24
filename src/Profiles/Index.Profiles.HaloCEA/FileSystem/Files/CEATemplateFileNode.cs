@@ -1,5 +1,4 @@
 ﻿using Index.Domain.Assets;
-using Index.Domain.Assets.Meshes;
 using Index.Domain.FileSystem;
 using Index.Profiles.HaloCEA.Assets;
 

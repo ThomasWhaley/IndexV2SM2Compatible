@@ -2,16 +2,13 @@
 The MIT License (MIT)
 Copyright (c) 2018 Helix Toolkit contributors
 */
-using Assimp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Animation = Assimp.Animation;
+using Assimp;
 using Microsoft.Extensions.Logging;
-using HelixToolkit.SharpDX.Core.Assimp;
-using HelixToolkit.SharpDX.Core;
-using Serilog.Core;
+using Animation = Assimp.Animation;
 
 namespace HelixToolkit.SharpDX.Core
 {

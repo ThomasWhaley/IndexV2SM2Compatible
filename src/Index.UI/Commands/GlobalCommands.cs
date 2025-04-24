@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using System.Windows.Input;
-using Index.Domain.Assets;
 using Prism.Commands;
 using Prism.Ioc;
 using Prism.Services.Dialogs;

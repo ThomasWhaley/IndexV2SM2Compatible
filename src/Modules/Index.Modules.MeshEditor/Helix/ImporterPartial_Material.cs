@@ -2,28 +2,22 @@
 The MIT License (MIT)
 Copyright (c) 2018 Helix Toolkit contributors
 */
-using Assimp;
-using Assimp.Unmanaged;
-using SharpDX;
-using SharpDX.Direct3D11;
 using System;
 using System.Collections.Concurrent;
 using System.IO;
 using System.Linq;
+using Assimp;
+using Assimp.Unmanaged;
 using Microsoft.Extensions.Logging;
+using SharpDX;
+using SharpDX.Direct3D11;
 using TextureType = Assimp.TextureType;
 
 namespace HelixToolkit.SharpDX.Core
 {
-  using HelixToolkit.SharpDX.Core.Assimp;
-  using HelixToolkit.SharpDX.Core.Model;
-  using HelixToolkit.SharpDX.Core;
-  using Model;
-  using Serilog.Core;
   using System.Collections.Generic;
-  using System.Configuration;
   using System.Threading;
-  using Utilities;
+  using HelixToolkit.SharpDX.Core.Model;
   namespace Assimp
   {
     public partial class Importer

@@ -14,7 +14,7 @@ namespace Index.UI.Extensions
       "Command",
       typeof( ICommand ),
       typeof( DoubleClickBehavior ),
-      new PropertyMetadata( default( ICommand ), OnCommandChanged ) ); 
+      new PropertyMetadata( default( ICommand ), OnCommandChanged ) );
 
     public static void SetCommand( DependencyObject element, ICommand value )
       => element.SetValue( CommandProperty, value );
@@ -44,8 +44,8 @@ namespace Index.UI.Extensions
       ASSERT_NOT_NULL( control, "DoubleClickBehavior can only be applied to controls." );
 
       control.MouseDoubleClick -= OnDoubleClick;
-      
-      if( GetCommand( control ) != null )
+
+      if ( GetCommand( control ) != null )
         control.MouseDoubleClick += OnDoubleClick;
     }
 
@@ -55,7 +55,7 @@ namespace Index.UI.Extensions
       ASSERT_NOT_NULL( element );
 
       var command = GetCommand( element );
-      if ( command is null)
+      if ( command is null )
         return;
 
       var parameter = GetCommandParameter( element );

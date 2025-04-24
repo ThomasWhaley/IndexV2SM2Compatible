@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Index.Domain.FileSystem;
+﻿using Index.Domain.FileSystem;
 
 namespace Index.Profiles.Halo2A.FileSystem
 {
