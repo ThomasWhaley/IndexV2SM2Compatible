@@ -1,0 +1,122 @@
+{
+  "groupRules": [
+    {
+      "merge": "strip",
+      "compare": "contains",
+      "key": "helmet_lieutenant",
+      "tokens": [ "_lenses", "_glass" ]
+    },
+    {
+      "merge": "strip",
+      "compare": "contains",
+      "key": "soldier_tabard",
+      "tokens": [ "_bttm", "_top", "_back" ]
+    },
+    {
+      "merge": "replace",
+      "compare": "contains",
+      "key": "hair_",
+      "tokens": [ "soldier_helmet_02" ]
+    },
+    {
+      "merge": "replace",
+      "compare": "contains",
+      "key": "soldier_tabard_01",
+      "tokens": [ "soldier_tabard_01" ]
+    },
+    {
+      "merge": "replace",
+      "compare": "contains",
+      "key": "soldier_tabard_06",
+      "tokens": [ "soldier_tabard_06" ]
+    },
+    {
+      "merge": "replace",
+      "compare": "contains",
+      "key": "soldier_crossbody_01",
+      "tokens": [ "soldier_cuirasse_cloth_01" ]
+    }
+  ],
+  "regionRules": {
+    "modelNameContains": "constructor",
+    "exceptionList": [ "_ammo", "_bag", "_vanity" ],
+    "leftTokens": [ "_l" ],
+    "leftRegion": "LEFT_",
+    "rightTokens": [ "_r" ],
+    "rightRegion": "RIGHT_",
+    "regions": [
+      {
+        "centered": true,
+        "tokens": [ "backpack" ],
+        "region": "BACKPACK"
+      },
+      {
+        "centered": true,
+        "tokens": [ "cuirasse", "plate", "chest", "neck", "belt" ],
+        "region": "CHEST"
+      },
+      {
+        "centered": true,
+        "tokens": [ "helmet", "head" ],
+        "region": "HELMET"
+      },
+      {
+        "centered": true,
+        "tokens": [ "lenses" ],
+        "region": "HELMET_LENSES"
+      },
+      {
+        "centered": true,
+        "tokens": [ "hood" ],
+        "region": "CLOTH"
+      },
+      {
+        "centered": true,
+        "tokens": [ "tabard" ],
+        "contains": "rend",
+        "region": "CLOTH"
+      },
+      {
+        "centered": false,
+        "tokens": [ "shoulder" ],
+        "region": "PAULDRON"
+      },
+      {
+        "centered": false,
+        "tokens": [ "hand" ],
+        "region": "GAUNTLET"
+      },
+      {
+        "centered": false,
+        "tokens": [ "shin", "knee", "boot", "greave" ],
+        "region": "GREAVE"
+      }
+    ]
+  },
+  "affixSettings": {
+    "clothHacks": true,
+    "actorDefault": "",
+    "charDefault": "",
+    "dxDefault": "",
+    "locatorDefault": "export_preserve_geometry\nuse_hierarchy_name\n0\n\nexport_preserve_position\n\n",
+    "boneDefault": "export_preserve_geometry\nuse_hierarchy_name\n0\n\nexport_preserve_position\n\n",
+    "rigidNoLodDefault": "export_preserve_geometry\nuse_hierarchy_name\n0\n\nexport_preserve_position\n\nis_shared\nFalse\nhide_at_last_distance\nTrue\n\n",
+    "rigidDefault": "export_preserve_geometry\nuse_hierarchy_name\n0\n\nexport_preserve_position\n\nlod_system_root\ndistances\n\nis_shared\nFalse\nhide_at_last_distance\nTrue\n\n",
+    "decalConstructorDefault": "alias_decal_transp\n\nlod_system_root\ndistances\n\nis_shared\n0\nhide_at_last_distance\n1\n\nexport_preserve_position\n\nexport_preserve_geometry\n\nmaterial_customization_set\nname\n{REGION_NAME}_DECAL\n\n",
+    "decalNoLodConstructorDefault": "alias_decal_transp\n\nis_shared\n0\nhide_at_last_distance\n1\n\nexport_preserve_position\n\nexport_preserve_geometry\n\nmaterial_customization_set\nname\n{REGION_NAME}_DECAL\n\n",
+    "decalDefault": "alias_decal_transp\n\nlod_system_root\ndistances\n\nis_shared\n0\nhide_at_last_distance\n1\n\nexport_preserve_position\n\nexport_preserve_geometry\n\n",
+    "decalNoLodDefault": "alias_decal_transp\n\nis_shared\n0\nhide_at_last_distance\n1\n\nexport_preserve_position\n\nexport_preserve_geometry\n\n",
+    "skinDefault": "export_preserve_geometry\n\nexport_preserve_position\n\nlod_system_root\ndistances\n\nis_shared\n0\nhide_at_last_distance\n1\n\n",
+    "skinNoLodDefault": "export_preserve_geometry\n\nexport_preserve_position\n\nis_shared\n0\nhide_at_last_distance\n1\n\n",
+    "skinConstructorDefault": "export_preserve_geometry\n\nexport_preserve_position\n\nmaterial_customization_set\nname\n{REGION_NAME}\n\nlod_system_root\ndistances\n\nis_shared\n0\nhide_at_last_distance\n1\n\n",
+    "skinNoLodConstructorDefault": "export_preserve_geometry\n\nexport_preserve_position\n\nmaterial_customization_set\nname\n{REGION_NAME}\n\nis_shared\n0\nhide_at_last_distance\n1\n\n",
+    "clothDefault": "cloth_render_mesh\n\nexport_preserve_geometry\n\nlod_system_root\ndistances\n\nis_shared\n0\nhide_at_last_distance\n1\n\nexport_preserve_position\n\nrender_preserve_uv_data\n\n",
+    "clothConstructorDefault": "cloth_render_mesh\n\nexport_preserve_position\n\nlod_system_root\ndistances\n\nis_shared\n0\nhide_at_last_distance\n1\n\nexport_preserve_geometry\n\nmaterial_customization_set\nname\n{REGION_NAME}\n\nrender_preserve_uv_data\n\n",
+    "clothSimDefault": "export_preserve_geometry\n\nexport_preserve_position\n\ncloth_simulation_mesh\n\nvisibility_hidden\npreserveMaterial\n0\n\nrender_preserve_uv_data\n\n",
+    "lodDefault": "export_preserve_geometry\n\nexport_preserve_position\n\n",
+    "lodClothDefault": "cloth_render_mesh\n\nexport_preserve_geometry\n\nexport_preserve_position\n\n",
+    "lodConstructorDefault": "export_preserve_geometry\n\nexport_preserve_position\n\nmaterial_customization_set\nname\n{REGION_NAME}\n\n",
+    "lodClothConstructorDefault": "cloth_render_mesh\n\nexport_preserve_geometry\n\nexport_preserve_position\n\nmaterial_customization_set\nname\n{REGION_NAME}\n\n",
+    "cdtDefault": "export_preserve_geometry\nuse_hierarchy_name\n0\n\nexport_preserve_position\n\ncdt_special_mesh\nname\n{NODE_NAME}\nlod\nhide_never\ncollision_type\n0\n\n"
+  }
+}

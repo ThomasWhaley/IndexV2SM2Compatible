@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ModelConverter": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\cc_sm_constructor_soldier.gltf"
+    }
+  }
+}
